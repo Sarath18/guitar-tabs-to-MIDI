@@ -1,6 +1,13 @@
 #!/usr/bin/python3
 
-def main():
+def displayTabs(tabs):
+    print("\n\n\n\n")
+    for i in range(len(tabs)):
+        for j in range(len(tabs[i])):
+            print(tabs[i][j],end="")
+        print()
+
+def preprocess():
     fname = "/home/sarath/tabs_to_midi/tab.txt"
     symbols = ['h','/','p','\\','*','^','|',"e","B","G","D","A","E"]
     with open(fname) as f:
@@ -32,11 +39,26 @@ def main():
                     a[i][j] = str(((int(a[i][j])*10) + int(a[i][j+1])))
                     a[i][j+1] = '-'
 
-    print("\n\n\n\n")
+    displayTabs(a)
+
+    return a
+
+
+
+def convertNotes(a):
+    #MIDI equivalent of e B G D A E
+    notes = [64, 59, 55, 50, 45, 40]
     for i in range(len(a)):
         for j in range(len(a[i])):
-            print(a[i][j],end="")
-        print()
+            if a[i][j]!='-':
+                a[i][j] = str(int(a[i][j])+notes[i])
+
+    displayTabs(a)
+
+
+def main():
+    a = preprocess()
+    convertNotes(a)
 
 
 if __name__ == '__main__':
