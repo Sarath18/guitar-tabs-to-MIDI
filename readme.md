@@ -1,1 +1,1 @@
-A program that convers guitar tabs into MIDI files.
+A program that converts guitar tabs into MIDI files.
