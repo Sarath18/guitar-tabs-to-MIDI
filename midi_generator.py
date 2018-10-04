@@ -17,7 +17,7 @@ class Track():
         MyMIDI = MIDIFile(1)
 
         #Change Instrument
-        MyMIDI.addProgramChange(self.track, self.channel, self.time,2)
+        MyMIDI.addProgramChange(self.track, self.channel, self.time,1)
 
         MyMIDI.addTempo(self.track, self.time, self.tempo)
         time=0

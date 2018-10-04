@@ -19,6 +19,12 @@ class Tabs(object):
             for i,line in enumerate(content):
                 content[i] = line.replace(symbol,"-")
 
+        for i in range(len(content)):
+            for j in range(len(content[i])):
+                content[i] = content[i][:(2*j)+1]+" "+content[i][(2*j)+1:]
+            content[i] = content[i][:len(content[i])-1]
+
+
         for i,line in enumerate(content):
             self.a.append(line.split(" "))
 

@@ -17,7 +17,6 @@ def main():
     t.displayTabs()
     t.convertNotes()
 
-
     outputTrack = Track(int(tempo))
     outputTrack.midiGenerator(t.a)
     command = "timidity output.mid"
