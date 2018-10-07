@@ -1,10 +1,11 @@
 # Guitar Tabs to MIDI
 A program that converts Guitar Tabs into MIDI files.
 
-<center><img src="/media/tabs.jpg" height=80 width=480></center>
-<br>
-<center><img src="/media/output.gif" height=200></center>
-
+<p align="center">
+    <img src="/media/tabs.jpg" height=80 width=480>
+    <br><br>
+    <img src="/media/output.gif" height=260>
+</p>
 
 
 ### Working
@@ -18,11 +19,13 @@ A program that converts Guitar Tabs into MIDI files.
 - Plays the `.mid` file
 
 <br>
+
 ##### Mapping
-The initial note of each string (open string notes) are mapped to the MIDI pitch as shown in fig. The subsequent notes on the fretboard is the shift from the intial note on that string.
-<center>`note pitch = inital pitch + fret number`</center>
-<center><img src="/media/mapping.jpg" height=200 width=650></center>
-<center><h6><i>Mapping of the fretboard and MIDI pitch</i></h6></center>
+The initial note of each string (open string notes) are mapped to the MIDI pitch as shown in fig. The subsequent notes on the fretboard is the shift from the intial note on that string. `note pitch = inital pitch of string + fret number`
+<p align="center">
+    <img src="/media/mapping.jpg" height=200 width=650><br>
+    <b><i>Mapping of the fretboard and MIDI pitch</i></b>
+</p>
 
 ### Requirements
 - Python3
@@ -47,4 +50,4 @@ Install the required files to run on your local system:
 ### How to use
 Run the program by typing the following in terminal:
 
-      python3 main.py
+    python3 main.py
