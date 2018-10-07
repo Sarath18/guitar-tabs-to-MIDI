@@ -13,10 +13,9 @@ class Track():
 
 
     def midiGenerator(self,a):
-        # One track, defaults to format 1 (tempo track is created automatically)
+
         MyMIDI = MIDIFile(1)
 
-        #Change Instrument
         MyMIDI.addProgramChange(self.track, self.channel, self.time,1)
 
         MyMIDI.addTempo(self.track, self.time, self.tempo)
@@ -25,12 +24,9 @@ class Track():
             for j in range(len(a)):
                 duration = self.duration
                 if a[j][i]!='-':
-                    #print(int(a[j][i]),end="")
                     if a[j][i+1]=='-':
                         duration = self.duration+1
                     MyMIDI.addNote(self.track,self.channel,int(a[j][i]),time,duration,self.volume)
-                #else:
-                    #MyMIDI.addNote(self.track,self.channel,0,time,self.duration,0)
             time+=self.time
 
         with open("output.mid", "wb") as output_file:

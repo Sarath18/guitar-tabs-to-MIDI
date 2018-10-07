@@ -7,7 +7,7 @@ import argparse
 
 def main():
 
-    fname = "/home/sarath/tabs_to_midi/"+input("Enter file name: ")
+    fname = input("Enter file location: ")
     tempo = input("Enter tempo of song: ")
     if tempo == "":
         tempo = 100
