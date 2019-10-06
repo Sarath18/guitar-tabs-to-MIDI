@@ -2,9 +2,9 @@
 A program that converts Guitar Tabs into MIDI files.
 
 <p align="center">
-    <img src="/media/tabs.jpg" height=80 width=480>
+    <img src="https://drive.google.com/uc?export=view&id=1qUSIVaDX1dRctiqukE79_FbHTousfKcq" height=80 width=480>
     <br><br>
-    <img src="/media/output.gif" height=260>
+    <img src="https://drive.google.com/uc?export=view&id=1R801JQLlXE_corwf24JJHebBqVCXYYuN" height=260>
 </p>
 
 
@@ -23,7 +23,7 @@ A program that converts Guitar Tabs into MIDI files.
 ##### Mapping
 The initial note of each string (open string notes) are mapped to the MIDI pitch as shown in fig. The subsequent notes on the fretboard is the shift from the intial note on that string. `note pitch = inital pitch of string + fret number`
 <p align="center">
-    <img src="/media/mapping.jpg" height=200 width=650><br>
+    <img src="https://drive.google.com/uc?export=view&id=1sTFLfT9__clt_XI-Tg_2G9JIik1Y9WuL" height=200 width=650><br>
     <b><i>Mapping of the fretboard and MIDI pitch</i></b>
 </p>
 
